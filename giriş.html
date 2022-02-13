@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+    <head>
+        <title>TheStudent'a Giriş Yap</title>
+        <meta charset="utf-8" />
+        <style type="text/css">
+            body{
+                background:#76b852;
+                font-size:16px;
+                font-family:Trebuchet MS;
+            }
+            #kayitFormu{
+                
+                border-radius:110px;
+                background:#ffffff;
+                width:550px;
+                margin:auto;
+                margin-top:20px;
+                padding:15px;
+                text-align:center;
+                border:2px solid darkblue;
+            }
+            input, button
+            {
+                border-radius:5px;
+                border:none;
+                width: 400px;
+                height:50px;
+                margin:20px 0px 20px 0px;
+                background:rgba(240,240,240,.5);
+                padding-left:15px;
+                font-style:italic;
+                
+            }
+            
+            .btn{
+                background:#76b852;
+                color:white;
+            }
+            h1{
+                color: rgb(206, 54, 54);
+                text-transform: capitalize;
+                font-size:30px;
+            }
+            h3{
+                text-transform: capitalize;
+                font-size:16px;
+                text-decoration: none;
+            }
+            a{
+                text-align: center;
+            }
+            h2{
+                font-size-adjust: 14px;
+                font-size: large;
+            }
+            
+            ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 150px;
+    overflow: hidden;
+    background-color: #34495e;
+}
+
+li {
+    display:inline-block;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    transition:all .3s ease-in;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:#f39c12; 
+}
+
+ul li ul {
+    background-color:#2c3e50;
+    display:none;
+    text-align: center;
+    position:absolute;
+    width:100px
+}
+
+ul li:hover ul{
+    display:block;
+}
+li ul li {
+    display:block; 
+}
+        </style>
+    </head>
+    <body>
+        <script>
+        color.onclick = function() {
+    this.style.backgroundColor = 'blue';
+    
+  }; 
+        </script>
+        <ul>
+            <li><a href="#index">Ana sayfa</a></li>
+          
+            <li><a href="#hakkımızda">Hakkımızda</a></li>
+          
+            <li><a href="#ders">Ders</a>
+             <ul>
+          
+                <li><a href="#php">php</a></li>
+          
+                <li><a href="#css">css</a></li> 
+          
+                <li><a href="#html">html</a></li>      
+              </ul>
+          
+              </li>
+          
+            <li><a href="KAYIT.html">Kayıt ol</a></li>
+          
+            <li><a href="#iletisim">İletişim</a></li>
+
+          </ul>
+          <div class="progress"></div>
+          <style>
+            @keyframes go-left-right {        /* bir isim ver: "go-left-right" */
+              from { left: 0px; }             /* animasyonu left: 0px'den başlat */
+              to { left: calc(100% - 50px); } /* animasyonu 100%-50px'de bitir */
+            }
+          
+            .progress {
+              animation: go-left-right 5s infinite alternate;
+              /* "go-left-right" animasyonunu elemente ekle
+                 animasyon süresi 3 saniye
+                 kaç kere yapılacağı: sonsuz (infinite)
+                 her seferinde yönünü ters çevir
+              */
+          
+              position: relative;
+              border: 2px solid rgb(255, 187, 0);
+              width: 50px;
+              height: 10px;
+              background: lime;
+            }
+            </style>
+            <div id="kayitFormu">
+                <form action="kayityap.php" method="get">
+                    <small><h1>Online'a Giriş yap</h1></small>
+                    <h2>Ad soyad</h2>
+                    <input type="text" name="adiniz" placeholder="Adınız ve soyadınız" required maxlength="15"/> 
+                    <h2>Email</h2>
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <h2>Şifre gir</h2>
+                    <input type="password" name="parola" placeholder="Şifre" required/>
+                     
+                    <input style="font-style: normal; font-size: x-large; border-radius: 180px; border: 19px; -webkit-box-shadow: -3px 22px 31px 2px rgba(67,102,58,1);
+                    -moz-box-shadow: -3px 22px 31px 2px rgba(67,102,58,1);
+                    box-shadow: -3px 22px 31px 2px rgba(67,102,58,1);" class="btn" type="submit" id="ayn" value="Giriş Yap" />
+            </form>
+        <center>
+            <div id="footer">
+                <p>2022. TheStudent. ©All rights reserved. Design by Cesur Huseynzade.</p>
+            </div>
+        </center>
+        </body>
+</html>
